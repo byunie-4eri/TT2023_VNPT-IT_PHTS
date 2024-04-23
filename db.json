@@ -1,0 +1,142 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "signupUsers": [
+    {
+      "fullname": "anh",
+      "mobile": 866563661,
+      "email": "anhb1906427@student.ctu.edu.vn",
+      "password": "pqa210801",
+      "id": 1
+    }
+  ],
+  "thns": [
+    {
+      "loaidt": "Tôm",
+      "doiTuong": "Tôm thẻ",
+      "diaChi": "{\"type\":\"point\",\"coordinates\":[100.50460435170777,22.02235427031323]}",
+      "soLuong": 3000,
+      "ngaytd": "2022-12-18T17:00:00.000Z",
+      "tinhHinhPT": "Tốt",
+      "id": 1
+    },
+    {
+      "loaidt": "Cá",
+      "doiTuong": "Cá basa",
+      "diaChi": "{\"type\":\"point\",\"coordinates\":[106.35306657423149,20.70533388861665]}",
+      "soLuong": 2000,
+      "ngaytd": "2023-03-13T17:00:00.000Z",
+      "tinhHinhPT": "Tốt",
+      "id": 2
+    },
+    {
+      "loaidt": "Cá",
+      "doiTuong": "Cá tra",
+      "diaChi": "{\"type\":\"point\",\"coordinates\":[103.50272196746795,19.131146275814885]}",
+      "soLuong": 1000,
+      "ngaytd": "2023-01-10T17:00:00.000Z",
+      "tinhHinhPT": "Tốt",
+      "id": 3
+    },
+    {
+      "loaidt": "Cá",
+      "doiTuong": "Cá trê",
+      "diaChi": "258/45, Mỹ Đức, Long Xuyên, An Giang",
+      "soLuong": 1500,
+      "ngaytd": "2023-03-14T17:00:00.000Z",
+      "tinhHinhPT": "Tốt",
+      "id": 4
+    }
+  ],
+  "csuds": [
+    {
+      "tenCS": "Quỳnh Anh",
+      "diaChi": "{\"type\":\"point\",\"coordinates\":[106.28421133899201,20.81415187297246]}",
+      "loaiGiong": "Cá basa",
+      "soLuong": 1500,
+      "ngayUong": "1992-11-26T17:00:00.000Z",
+      "tinhHinhPT": "Tốt",
+      "id": 1
+    },
+    {
+      "tenCS": "Nguyễn Văn A",
+      "diaChi": "{\"type\":\"point\",\"coordinates\":[105.77031023102,12.343520079625165]}",
+      "loaiGiong": "Cá tra",
+      "soLuong": 1000,
+      "ngayUong": "1992-05-05T17:00:00.000Z",
+      "tinhHinhPT": "Tốt",
+      "id": 2
+    },
+    {
+      "tenCS": "Phạm Văn B",
+      "diaChi": "{\"type\":\"point\",\"coordinates\":[107.78370992857322,14.818444652378389]}",
+      "loaiGiong": "Tôm",
+      "soLuong": 3000,
+      "ngayUong": "2001-08-20T17:00:00.000Z",
+      "tinhHinhPT": "Tốt",
+      "id": 3
+    },
+    {
+      "tenCS": "Trương Thị C",
+      "diaChi": "{\"type\":\"point\",\"coordinates\":[108.7554687800075,13.462694249275103]}",
+      "loaiGiong": "Cá trê",
+      "soLuong": 2000,
+      "ngayUong": "2022-05-24T17:00:00.000Z",
+      "tinhHinhPT": "Tốt",
+      "id": 4
+    },
+    {
+      "tenCS": "Lê Thị D",
+      "diaChi": "{\"type\":\"point\",\"coordinates\":[107.06349183383941,16.61810729762054]}",
+      "loaiGiong": "Cá lóc",
+      "soLuong": 1000,
+      "ngayUong": "2022-07-20T17:00:00.000Z",
+      "tinhHinhPT": "Tốt",
+      "id": 5
+    }
+  ],
+  "vphcs": [
+    {
+      "hoTen": "Nguyễn Văn B",
+      "tenCS": "AGSM",
+      "diaChi": "357/25, Mỹ Bình, Long Xuyên",
+      "noiDungVP": "Không có giấy phép kinh doanh",
+      "ngayVP": "2023-05-16T17:00:00.000Z",
+      "mucXuPhat": 15000000,
+      "id": 1
+    },
+    {
+      "hoTen": "Lê Thị C",
+      "tenCS": "EXOSM",
+      "diaChi": "123/21, An Hòa, Châu Thành, An Giang",
+      "noiDungVP": "Thuê giấy phép kinh doanh",
+      "ngayVP": "2023-04-12T17:00:00.000Z",
+      "mucXuPhat": 5000000,
+      "id": 3
+    },
+    {
+      "hoTen": "Trần Thị D",
+      "tenCS": "SJ",
+      "diaChi": "357/25, Mỹ Bình, Long Xuyên",
+      "noiDungVP": "Giấy phép kinh doanh hết hạn",
+      "ngayVP": "2023-03-15T17:00:00.000Z",
+      "mucXuPhat": 10000000,
+      "id": 4
+    }
+  ]
+}

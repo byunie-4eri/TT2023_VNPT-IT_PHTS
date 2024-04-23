@@ -1,0 +1,103 @@
+<mat-toolbar class="mat-elevation-z8">
+    <button
+      mat-icon-button
+      *ngIf="sidenav.mode === 'over'"
+      (click)="sidenav.toggle()"
+    >
+      <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+      <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+    </button>
+    HỆ THỐNG TIN CHUYÊN NGÀNH THỦY SẢN
+    <span class="example-spacer"></span>
+    <button routerLink="/login" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>account_box</mat-icon>
+    </button>
+  </mat-toolbar>
+  
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+      <!-- <img
+        class="avatar mat-elevation-z8"
+        src="assets/images/Logo.png"
+      /> -->
+
+      <div>
+        <!-- <img
+        class="avatar mat-elevation-z8"
+        src="assets/images/Logo.png"
+        /> -->
+
+        <img class="avatar mat-elevation-z8" [src]="url"><br>
+        <input type="file" id="img" style="display: none" accept="image/*" (change)="onselectFile($event)">
+        <label style="font-size: 9px" for="img">Thay đổi ảnh đại diện</label>
+
+      </div>
+  
+      <h4 class="name">SỞ NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN</h4>
+      <!-- <p class="designation">VNPT-IT 5</p> -->
+  
+      <mat-divider></mat-divider>
+  
+      <button mat-button class="menu-button" routerLink="/dashboard">
+        <mat-icon>home</mat-icon>
+        <span>Trang Chủ</span>
+      </button>
+
+      <button mat-button class="menu-button" routerLink="/viewmap">
+        <mat-icon>map</mat-icon>
+        <span>Bản đồ</span>
+      </button>
+  
+      <button mat-button class="menu-button" routerLink="/csudform">
+        <mat-icon>layers</mat-icon>
+        <span>Cơ sở<br></span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/vphcform">
+        <mat-icon>storage</mat-icon>
+        <span>Vi phạm</span>
+      </button>
+      
+      <!-- <button mat-button class="menu-button" routerLink="/">
+        <mat-icon>assignment_ind</mat-icon>
+        <span>QL Sang tên<br></span>
+      </button> -->
+      <button mat-button class="menu-button" routerLink="/thnform">
+        <mat-icon>import_contacts</mat-icon>
+        <span>Tình hình nuôi<br></span>
+      </button>
+  
+      <!-- <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+        <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+          <button mat-icon-button disabled=""></button>
+          {{node.name}}
+        </mat-tree-node>
+        <mat-tree-node *matTreeNodeDef="let node;when:hasChild" matTreeNodePadding>
+          <button mat-icon-button matTreeNodeToggle [attr.atria-label]="'Tonggle'+'node.name'">
+            <mat-icon class="mat-icon-rtl-mirror">
+              {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+            </mat-icon>
+          </button>
+          {{node.name}}
+        </mat-tree-node>
+      </mat-tree> -->
+  
+      <mat-divider></mat-divider>
+  
+      <button mat-button class="menu-button" routerLink="/help">
+        <mat-icon>help</mat-icon>
+        <span>Trợ giúp</span>
+      </button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content mat-elevation-z8">
+        <!-- ----------- -->
+        <router-outlet>
+  
+            <app-map></app-map>
+
+        </router-outlet>
+        <!-- -------- -->
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

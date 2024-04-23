@@ -1,0 +1,65 @@
+<div mat-dialog-title>
+    <h1>Cơ sở sản xuất, ương dưỡng</h1>
+</div>
+
+<form [formGroup]="csudForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <div class="col">
+                <mat-form-field appearance="outline">
+                    <mat-label>Tên cơ sở</mat-label>
+                    <input matInput type="text" placeholder="ABC" formControlName="tenCS">
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <mat-form-field appearance="outline">
+                    <mat-label>Loại giống ương</mat-label>
+                    <input matInput type="text" placeholder="Cá sấu" formControlName="loaiGiong">
+                </mat-form-field>
+            </div>
+        </div>
+        
+    
+        <div class="row">
+            <div class="col">
+                <mat-form-field appearance="outline">
+                    <mat-label>Số lượng</mat-label>
+                    <input matInput type="number" placeholder="2000" formControlName="soLuong">
+                </mat-form-field>
+            </div>
+            <div class="col">
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Tình hình phát triển</mat-label>
+                    <input matInput type="text" placeholder="Tốt" formControlName="tinhHinhPT">
+                </mat-form-field>
+
+                
+            </div>
+        </div>
+    
+        <div class="row">
+            
+            <mat-form-field appearance="outline">
+                <mat-label>Ngày ương</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="ngayUong">
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Địa chỉ</mat-label>
+                <input matInput type="text" formControlName="diaChi" [value]="lnglat">
+                <app-map></app-map>
+            </mat-form-field>
+        </div>
+    
+    </div>
+    
+    <div mat-dialog-actions class="action">
+        <button class="btn" mat-raised-button type="button" [mat-dialog-close]="false" color="warn">Thoát</button>
+        <button class="btn" mat-raised-button color="primary" type="submit">{{data ? 'Save': 'Lưu'}}</button>
+    </div>
+</form>
